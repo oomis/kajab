@@ -19,7 +19,8 @@
       <tr>
         <td><%= post.name %></td>
         <td><%= post.title %></td>
-        <td><%= post.report %></td>
+        <td><%= link_to "Download", post.report_url %></td> 
+        <!--<td><%#= post.report %></td>-->
         <td><%= post.date %></td>
         <td><%= post.comment %></td>
         <td><%= link_to 'Show', post %></td>

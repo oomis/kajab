@@ -12,7 +12,8 @@
 
 <p>
   <strong>Report:</strong>
-  <%= @post.report %>
+  <%= link_to "Download", @post.report_url %>
+  <%#= @post.report %>
 </p>
 
 <p>
