@@ -6,7 +6,7 @@ class Post < ApplicationRecord
       if search
         where('name LIKE ?', "%#{search}%")
       else
-        scoped
+        unscoped
       end
     end
 end
