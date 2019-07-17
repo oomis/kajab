@@ -15,6 +15,13 @@
 //= require turbolinks
 //= require_tree .
 
+
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+//= require jquery
+//= require jquery_ujs
+
 $(function() {
   $("#posts th a, #posts .pagination a").live("click", function() {
     $.getScript(this.href);
